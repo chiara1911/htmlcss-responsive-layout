@@ -13,6 +13,10 @@
 	--color-contrast-color: #FCC060;
 	--color-text: #424242;
 }
+
+.container{
+	max-width: 1200px;
+}
 .debug{
     border: solid 1px black;
 }
@@ -97,12 +101,13 @@ footer{
 		flex-flow: row wrap;
 	}
 	
-	.intro .col{
+	#intro .col{
 		width: calc(100% / 3);
 	}
-	.intro .col:first-child{
+	#intro .col:first-child{
 		width: ((100% / 3) * 2);
 	}
+	
 
 }
 
