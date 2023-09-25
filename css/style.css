@@ -16,6 +16,7 @@
 
 .container{
 	max-width: 1200px;
+	margin: 0 auto;
 }
 .debug{
     border: solid 1px black;
@@ -41,9 +42,9 @@ img{
 }
 .card{
 	background-color: var(--color-bg-card);
-	display: inline-block;
+	display: block;
 	padding: 20px;
-	margin: 20px;	
+	margin: 20px;
 	text-align: center;
 }
 .b-radius{
@@ -95,26 +96,31 @@ footer{
 /* MEDIA QUERY */
 
 @media screen and (min-width: 576px) {
-	
+
 	.d-flex{
 		display:flex;
 		flex-flow: row wrap;
 	}
-	
-	#intro .col{
-		width: calc(100% / 3);
+	.align-content{
+		align-items: stretch;
+		align-content: stretch;
 	}
-	#intro .col:first-child{
-		width: ((100% / 3) * 2);
+
+	#intro .card{
+		width: calc((100% / 3) - 40px);
 	}
-	
+	#intro .card:first-child{
+		width: calc((100% / 3) * 2 - 40px);
+	}
+
+
 
 }
 
 @media screen and (min-width: 798px) {
-	
+
 }
 
 @media screen and (min-width: 1200px) {
-	
+
 }
