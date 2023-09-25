@@ -16,6 +16,7 @@
 .debug{
     border: solid 1px black;
 }
+
 body{
     font-family: 'PT Sans', sans-serif;
 }
@@ -38,8 +39,8 @@ img{
 	background-color: var(--color-bg-card);
 	display: inline-block;
 	padding: 20px;
-	margin: 20px;
-	
+	margin: 20px;	
+	text-align: center;
 }
 .b-radius{
 	border-radius: 20px;
@@ -56,6 +57,8 @@ img{
 .m-20{
 	margin: 20px;
 }
+
+
 /* bottoni */
 .btn-blue{
 	background-color: var(--color-secondary-color);
@@ -73,10 +76,40 @@ header{
 	position: relative;
 	top: 20px;
 }
-
+.icon{
+	font-size: 3em;
+	color: var(--color-secondary-color);
+	margin-bottom: 10px;
+}
 
 /* footer */
 footer{
 	background-color: var(--color-dark-color);
 	color: var(--color-light-color);
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 576px) {
+	
+	.d-flex{
+		display:flex;
+		flex-flow: row wrap;
+	}
+	
+	.intro .col{
+		width: calc(100% / 3);
+	}
+	.intro .col:first-child{
+		width: ((100% / 3) * 2);
+	}
+
+}
+
+@media screen and (min-width: 798px) {
+	
+}
+
+@media screen and (min-width: 1200px) {
+	
 }
